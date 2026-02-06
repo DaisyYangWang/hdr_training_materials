@@ -17,29 +17,33 @@
     .note { background: #f7f7f7; border-left: 4px solid #999; padding: 12px; }
     .footer { margin-top: 26px; font-size: 13px; color: #555; }
     code { background: #f2f2f2; padding: 2px 6px; border-radius: 6px; }
+    .gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.thumb {
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.thumb .cap {
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #444;
+}
 </style>
-  .gallery {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 10px;
-    }
-    .thumb {
-      border: 1px solid #e1e1e1;
-      border-radius: 10px;
-      overflow: hidden;
-      background: #fff;
-    }
-    .thumb img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .thumb .cap {
-      padding: 10px 12px;
-      font-size: 13px;
-      color: #444;
-    }
+  
 </head>
 <body>
   <div class="container">
